@@ -14,7 +14,7 @@ function Login (){
             password:password
         }
         try{
-            const res=await axios.post("http://localhost:4000/login", user)
+            const res=await axios.post(" https://login-signup-backend-3.onrender.com/login", user)
             toast.success(res.data.message)
             navigate("/home")
         }

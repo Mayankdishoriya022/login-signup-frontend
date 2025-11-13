@@ -16,7 +16,7 @@ function Signup(){
             password:password
         }
         try{
-            const res=await axios.post("http://localhost:4000/signup", user)
+            const res=await axios.post(" https://login-signup-backend-3.onrender.com/signup", user)
             toast.success(res.data.message)
 
         }
