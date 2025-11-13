@@ -21,15 +21,17 @@ function Login (){
         catch(e){
             toast.error(e.response.data.message)
         }
+        setEmail("")
+        setPassword("")
     }
     return(
         <div className="flex justify-center items-center h-[100vh]">
         <form action=""  className="border border-black rounded-md p-10 bg-blue-200 flex justify-center flex-col w-[400px]"onSubmit={login}>
          <label htmlFor="" className="m-4">Email:</label>
-         <input type="email" name="" id="" onChange={(e)=>setEmail(e.target.value)}/>
+         <input type="email" name="" id="" onChange={(e)=>setEmail(e.target.value)} value={email}/>
          <br />
          <label htmlFor="" className="m-4">Password:</label>
-         <input type="password" name="" id=""onChange={(e)=>setPassword(e.target.value)}/>
+         <input type="password" name="" id=""onChange={(e)=>setPassword(e.target.value)} value={password}/>
          <br />
          <button className="m-4 border border-black rounded-md bg-blue-500" type="submit">Login</button>
         </form>
