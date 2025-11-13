@@ -24,28 +24,25 @@ function Signup(){
             toast.error(e.response.data.error)
 
         }
-        setEmail("")
-        setName("")
-        setNumber("")
-        setPassword("")
+       
     }
     return(
         <div className="flex justify-center items-center h-[100vh]">
         <form action="" className="border border-black rounded-md p-10 bg-blue-200 flex justify-center flex-col w-[400px]" onSubmit={Signup}>
         <label htmlFor="" className="m-4">Name:</label>
-        <input type="text" name="name" id="" onChange={(e)=>setName(e.target.value)} value={name}/>
+        <input type="text" name="name" id="" onChange={(e)=>setName(e.target.value)} />
         <br />
         <br />
         <label htmlFor="" className="m-4">Email:</label>
-        <input type="email" name="email" id="" onChange={(e)=>setEmail(e.target.value)} value={email}/>
+        <input type="email" name="email" id="" onChange={(e)=>setEmail(e.target.value)} />
         <br />
         <br />
         <label htmlFor="" className="m-4">Mobile Number:</label>
-        <input type="number" name="number" id="" onChange={(e)=>setNumber(e.target.value)} value={number}/>
+        <input type="number" name="number" id="" onChange={(e)=>setNumber(e.target.value)} />
         <br />
         <br />
         <label htmlFor="" className="m-4">Password:</label>
-        <input type="password" name="password" id="" onChange={(e)=>setPassword(e.target.value)} value={password}/>
+        <input type="password" name="password" id="" onChange={(e)=>setPassword(e.target.value)} />
         <br />
         <br />
         <button className="m-4 border border-black rounded-md bg-blue-500" type="submit">Signup</button>
